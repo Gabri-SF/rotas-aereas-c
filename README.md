@@ -23,3 +23,18 @@ Certifica-te de que tens o `gcc` instalado. O projeto inclui um `Makefile` para 
 ```bash
 make
 mingw32-make
+```
+
+### 🚀 Testes de Estabilidade
+O projeto utiliza **GitHub Actions** para correr testes automatizados em cada `push`. 
+
+- **Memória:** 0 Leaks (confirmado por Valgrind).
+- **Compilação:** Rigorosa (flags `-Wall -Wextra`).
+- **Ambiente:** Testado em Ubuntu Latest.
+
+## 🛠️ Lógica de Pesquisa de Rotas
+O sistema utiliza uma abordagem de força bruta inteligente para encontrar trajetórias entre aeroportos, dividida em três níveis de complexidade:
+
+1. **Voos Diretos:** Pesquisa simples na lista ligada de rotas.
+2. **1 Escala:** Algoritmo que cruza destinos de saída de A com origens de entrada em B.
+3. **2 Escalas:** Expansão da lógica anterior, garantindo que não existem ciclos (não voltar ao aeroporto de origem).
