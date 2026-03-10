@@ -17,3 +17,4 @@ Certifica-te de que tens o `gcc` instalado. O projeto inclui um `Makefile` para 
 
 ```bash
 make
+mingw32-make
