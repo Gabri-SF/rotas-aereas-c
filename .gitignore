@@ -1,0 +1,6 @@
+# Binários e Objetos
+*.o
+rotas2024
+
+# Ficheiros temporários/sistema
+.DS_Store
