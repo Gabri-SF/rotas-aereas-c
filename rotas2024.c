@@ -1,3 +1,5 @@
+#define _POSIX_C_SOURCE 200809L /* Necessário para usar getline() e getopt() */
+
 #include "tipos.h"
 #include "ficheiros.h"
 #include "aeroportos_rotas.h"

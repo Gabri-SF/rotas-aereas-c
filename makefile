@@ -1,6 +1,6 @@
 CC = gcc
 # Mantive as tuas flags originais
-CFLAGS = -Wall -Wextra -std=c99 -ansi
+CFLAGS = -Wall -Wextra -D_DEFAULT_SOURCE -std=gnu99
 LDFLAGS = -lm
 
 # Todos os cabeçalhos (.h) do projeto
