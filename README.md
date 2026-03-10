@@ -1,3 +1,8 @@
+![C](https://img.shields.io/badge/Language-C-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Repo Size](https://img.shields.io/github/languages/code-size/Gabri-SF/rotas-aereas-c)
+![Last Commit](https://img.shields.io/github/last-commit/Gabri-SF/rotas-aereas-c)
+
 # ✈️ Sistema de Gestão de Rotas e Aeroportos
 
 Este projeto é um sistema desenvolvido em **C** para a gestão e pesquisa de rotas aéreas entre aeroportos. Permite calcular distâncias, procurar voos diretos ou com escalas (até 2) e ordenar resultados por tempo ou distância.
