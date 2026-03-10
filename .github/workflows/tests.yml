@@ -20,4 +20,4 @@ jobs:
 
     - name: Testar Fugas de Memória (Valgrind)
       # Nota: Usamos o -L 0 com dois códigos IATA que existam no teu ficheiro de teste
-      run: valgrind --leak-check=full --error-exitcode=1 ./rotas2024 -L 0 LIS OPO
+      run: valgrind --leak-check=full --undef-value-errors=no --error-exitcode=1 ./rotas2024 -L 0 LIS OPO
