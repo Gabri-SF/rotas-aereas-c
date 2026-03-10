@@ -1,0 +1,23 @@
+name: Verificação de Qualidade C
+
+on: [push]
+
+jobs:
+  check-memory:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download do Código
+      uses: actions/checkout@v4
+
+    - name: Instalar Compilador e Valgrind
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y gcc make valgrind
+
+    - name: Compilar Projeto
+      run: make
+
+    - name: Testar Fugas de Memória (Valgrind)
+      # Nota: Usamos o -L 0 com dois códigos IATA que existam no teu ficheiro de teste
+      run: valgrind --leak-check=full --error-exitcode=1 ./rotas2024 -L 0 LIS OPO
