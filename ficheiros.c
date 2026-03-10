@@ -14,8 +14,8 @@ int testa_abertura_dos_ficheiros(FILE* fp1, FILE* fp2){
 
 AEROPORTO le_dados_aeroportos(FILE* fp, int* nconv) {
     AEROPORTO aer;
-  	char linha[DIM];
-  	char erro[DIM]; 
+  	char linha[DIM] = {0};
+  	char erro[DIM] = {0}; 
   	
     do {
         if (fgets(linha, DIM, fp) == NULL)
@@ -32,8 +32,8 @@ AEROPORTO le_dados_aeroportos(FILE* fp, int* nconv) {
 
 ROTA le_dados_rotas(FILE* fp, int* nconv) {
     ROTA rota;
-    char linha[DIM];
-    char erro[DIM]; 
+    char linha[DIM] = {0};
+    char erro[DIM] = {0}; 
     
     do {
         if (fgets(linha, DIM, fp) == NULL)
